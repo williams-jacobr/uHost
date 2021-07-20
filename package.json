@@ -1,0 +1,15 @@
+{
+  "name": "uhost",
+  "version": "1.0.0",
+  "description": "Hosting website",
+  "default": "index.html",
+  "scripts": {
+    "run": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Jacob Williams",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-nightly.776"
+  }
+}
