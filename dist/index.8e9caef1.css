@@ -1,7 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("freedom.0f55c188.jpg") left 10% bottom 40% / cover no-repeat border-box,
-    #ff1b68;
+    url("freedom.0f55c188.jpg") center / cover no-repeat border-box, #ff1b68;
   /* background-image: url("freedom.jpg"); */
   /* background-size: cover;
   
@@ -18,7 +17,6 @@
   /* border: 5px black solid; */
   /* margin: 10px; */
   /* box-sizing: border-box; */
-  margin-top: 2.5rem;
   position: relative;
 }
 
@@ -31,7 +29,7 @@
   font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
@@ -47,26 +45,19 @@
   text-align: center;
 }
 
-.plan__list {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-
 .plan {
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  margin: 0.5rem 0;
+  /* display: inline-block; */
+  width: 100%;
+  /* vertical-align: middle; */
 }
 
 .plan--highlighted {
   background: #19b84c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -116,7 +107,7 @@
 
 .key-features__items {
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .key-features__item {
@@ -124,20 +115,67 @@
   color: white;
   padding: 0.5rem 1rem;
   font-weight: bold;
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+  width: 100%;
   text-align: center;
 }
 
+.key-features__item p {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 1rem;
+}
+
 .key-feature__image {
+  display: inline-block;
   background: #ffcede;
   width: 128px;
   height: 128px;
   border: 2px solid #424242;
   border-radius: 50%;
-  margin: auto;
   padding: 1.25rem;
+}
+
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    margin: 0.5rem;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .key-features__items {
+    text-align: center;
+  }
+
+  .key-features__item {
+    display: inline-block;
+    width: 30%;
+    max-width: 25rem;
+    vertical-align: top;
+  }
+
+  .key-features__item p {
+    display: inline;
+    width: 100%;
+    padding: 0;
+  }
+
+  .key-feature__image {
+    display: block;
+    margin: auto;
+  }
 }
 
 .modal {
