@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("../anonymousPro-Regular.f5d57d6d.ttf") format("truetype");
+  /* font-display: optional; */
+}
+
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("../anonymousPro-Bold.c770de57.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100i;400;900&display=swap");
+
 main {
   padding-top: 2rem;
 }
@@ -49,10 +63,24 @@ main {
 .package__info {
   padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 1.25rem;
   color: #0e4f1f;
   background: white;
-  font-family: "Roboto", sans-serif;
+  font: 700 1.25rem "AnonymousPro", sans-serif;
+
+  /* font: menu; */
+  /* font: status-bar; */
+
+  /* font: italic small-caps 700 1.25rem/1 "AnonymousPro", sans-serif; */
+  /* font-style font-variant font-weight font-size/line-height font-family */
+
+  /* font-size: 1.25rem; */
+  /* font-family: "AnonymousPro", sans-serif; */
+  /* font-weight: 700; */
+  /* font-weight: 900;
+  font-style: italic; */
+  /* line-height: 2; */
+  /* text-decoration: underline wavy red; */
+  /* text-shadow: 2px 2px 5px grey; */
 }
 
 .clearfix {
