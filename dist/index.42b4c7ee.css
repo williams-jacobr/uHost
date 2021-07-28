@@ -29,32 +29,34 @@ main {
   position: fixed;
   top: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+/* .main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+} */
 .main-header__brand {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  height: 2.5rem;
+  /* height: 2.5rem; */
   /* width: 20px; */
-  display: inline-block;
+  /* display: inline-block; */
 }
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
   vertical-align: middle;
 }
-.main-nav__item {
+.main-nav {
   display: none;
 }
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 54px);
-  vertical-align: middle;
+  display: flex;
 }
 .main-nav__item a,
 .mobile-nav__item a {
@@ -63,10 +65,6 @@ main {
   font-weight: bold;
   padding: 0.1rem;
   /* padding: 10px; */
-}
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
 }
 .toggle-button {
   width: 3rem;
@@ -92,8 +90,11 @@ main {
     height: 3rem;
   }
 
+  .main-nav {
+    display: flex;
+  }
+
   .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
   }
 
@@ -130,16 +131,23 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-footer__link {
   /* display: inline-block; */
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 @media (min-width: 40rem) {
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
+  }
+
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 .main-footer__link a {
@@ -180,16 +188,20 @@ main {
   top: 0;
   left: 0;
   background: white;
-  width: 80%;
+  width: 40%;
   height: 100vh;
 }
 .mobile-nav__items {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-nav__item {
   margin: 1rem 0;
