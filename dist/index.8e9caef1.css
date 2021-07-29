@@ -107,27 +107,33 @@
 
 .key-features__items {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* text-align: center; */
 }
 
 .key-features__item {
   list-style: none;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 4rem;
   font-weight: bold;
   width: 100%;
-  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .key-features__item p {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  /* width: 50%; */
   padding: 1rem;
 }
 
 .key-feature__image {
-  display: inline-block;
+  /* display: inline-block; */
   background: #ffcede;
   width: 128px;
   height: 128px;
@@ -139,43 +145,53 @@
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 30%;
+    height: 28rem;
     margin: 0.5rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     min-width: 13rem;
-    max-width: 25rem;
+    max-width: 20rem;
   }
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
   }
 
   .key-features__items {
-    text-align: center;
+    /* text-align: center; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .key-features__item {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* vertical-align: top; */
   }
 
   .key-features__item p {
-    display: inline;
-    width: 100%;
-    padding: 0;
+    text-align: center;
   }
 
-  .key-feature__image {
+  /* .key-feature__image {
     display: block;
     margin: auto;
-  }
+  } */
 }
 
 .modal {

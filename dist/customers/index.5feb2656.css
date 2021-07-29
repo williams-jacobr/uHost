@@ -24,19 +24,15 @@ main {
 }
 
 .testimonial__info {
-  text-align: right;
+  text-align: left;
   padding: 0.9rem;
   /* display: inline-block; */
   /* vertical-align: middle; */
   /* width: 25%; */
 }
 
-#customer-2.testimonial {
-  text-align: right;
-}
-
 #customer-2 .testimonial__info {
-  text-align: left;
+  text-align: right;
 }
 
 .testimonial__name {
@@ -73,18 +69,17 @@ main {
   .testimonial {
     margin: 3rem auto;
     max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .testimonial__image-container {
     width: 65%;
-    display: inline-block;
-    vertical-align: middle;
   }
 
   .testimonial__info {
-    display: inline-block;
-    vertical-align: middle;
-    width: 25%;
+    width: 30%;
   }
 }
 
