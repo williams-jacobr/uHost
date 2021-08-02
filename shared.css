@@ -42,7 +42,7 @@ main {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,6 +150,10 @@ main {
   border: none;
 }
 
+.main-nav__item--cta {
+  animation: wiggle 400ms 3s 8 ease-out none;
+}
+
 .main-footer {
   background: black;
   padding: 2rem;
@@ -223,13 +227,15 @@ main {
 
 .mobile-nav {
   display: none;
+  transform: translateX(-100%);
   position: fixed;
   z-index: 101;
   top: 0;
   left: 0;
   background: white;
-  width: 40%;
+  /* width: fit-content(60%); */
   height: 100vh;
+  transition: transform 0.3s ease-out;
 }
 
 .mobile-nav__items {
@@ -255,4 +261,23 @@ main {
 
 .open {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.open-mobile {
+  /* display: block !important; */
+  transform: translateX(0) !important;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
+  }
 }
